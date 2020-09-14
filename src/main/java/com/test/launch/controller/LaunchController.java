@@ -14,7 +14,7 @@ public class LaunchController {
 	private static final String template = "Hello, %s!";
 	private final AtomicLong counter = new AtomicLong();
 
-	@GetMapping("/greet")
+	@GetMapping("/welcome")
 	public ResponseEntity<String> greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
 		
 		final String temp = new String ("Hello "+name);
